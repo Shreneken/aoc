@@ -3,10 +3,10 @@ use std::fs;
 
 fn main() {
     // --snip--
-    println!("In file {}", "./input.txt");
+    println!("In file {}", "./day1_input.txt");
 
     let contents =
-        fs::read_to_string("./input.txt").expect("Should have been able to read the file");
+        fs::read_to_string("./day1_input.txt").expect("Should have been able to read the file");
     let mut curr_max = 0;
     let mut curr = 0;
     for text in contents.split('\n') {
